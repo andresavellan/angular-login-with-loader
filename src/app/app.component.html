@@ -1,0 +1,15 @@
+<!-- Material loader -->
+<!-- <mat-progress-spinner [mode]="'indeterminate'" *ngIf="loading$ | async"></mat-progress-spinner> -->
+
+<button mat-raised-button (click)="loader.show()" style="z-index: 99;position: absolute; ">
+    Show loader
+</button>
+
+<button mat-raised-button (click)="loader.hide()" style="z-index: 99;position: absolute; left: 150px">
+    Hide loader
+</button>
+
+<!-- Loader triggers by http calls -->
+<app-loader></app-loader>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,20 @@
+<section class="pop-up-section">
+  <h2 mat-dialog-title>This is the pop up</h2>
+  <button mat-button mat-dialog-close class="close-pop-up">
+    <mat-icon>clear</mat-icon>
+  </button>
+    <div *ngIf="data ; else elseBlock">
+      <mat-dialog-content>
+        <p>
+          {{ data.name }}
+          {{ data.email }}
+          {{ data.password }}
+          {{ data.message }}
+        </p>
+      </mat-dialog-content>
+    </div>
+    <ng-template #elseBlock
+      >Content to render when condition is false.</ng-template
+    >
+  
+</section>
